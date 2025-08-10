@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Page</title>
+  <style>
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+    background-color: #f2e6ff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid purple;
+}
+
+header h1 {
+    margin: 0;
+    color: purple;
+	font-size: 97px;
+}
+
+/* Navigation menu */
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Payment form container */
+.container {
+    background-color: white;
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Form elements */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Payment button */
+button {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkmagenta;
+}
+
+/* Footer */
+footer {
+    background-color: #f2e6ff;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid purple;
+}
+
+footer a {
+    color: purple;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+</style>
+</head>
+<body>
+<header>
+<h1 style="color: purple">LUXORA</h1>
+<nav>
+<a href="home.html">Home</a>
+<a href="product.html">Product</a>
+
+</nav>
+</header>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Payment Details</h2>
+
+    <form id="payment-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+<br><br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+<br><br>
+      <label for="address">Delivery Address</label>
+      <input type="text" id="address" name="address" placeholder="Enter your delivery address" required>
+<br><br>
+      <label for="payment-method">Select Payment Method</label>
+      <select id="payment-method" name="payment_method" required>
+        <option value="">-- Select --</option>
+        <option value="credit">Credit Card</option>
+        <option value="debit">Debit Card</option>
+        <option value="upi">UPI</option>
+        <option value="cod">Cash on Delivery</option>
+      </select>
+<br><br>
+      <button type="submit">Make Payment</button>
+    </form>
+  </div>
+
+ 
+</body>
+<footer>
+  <p><mark><b>About Us</b></mark></p>
+<p>
+  Luxora is your ultimate destination for luxury living. From premium skincare and 
+  high-end makeup to elite fashion accessories and lifestyle gadgets, we bring elegance and sophistication 
+  to your fingertips. At Luxora, we believe beauty and style go hand in hand with quality and comfort.
+</p>
+
+
+  <p><mark><strong>Contact Details</strong></mark></p>
+  <p>Phone: 9876543210</p>
+  <p>Email: eventexpo@gmail.com</p>
+
+  <p><mark><b>Follow Us On</b></mark></p>
+  <a href="https://web.whatsapp.com/">WhatsApp</a><br>
+  <a href="https://www.facebook.com/">Facebook</a><br>
+  <a href="https://www.instagram.com/">Instagram</a>
+</footer>
+</html>
